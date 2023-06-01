@@ -16,8 +16,7 @@ import org.junit.runners.Parameterized.Parameters;
  *
  */
 @RunWith(Parameterized.class)
-public class BitAndTest
-{
+public class BitAndTest {
 	/**
 	 * Bit value for left side of binary operator
 	 */
@@ -43,14 +42,13 @@ public class BitAndTest
 	 * possible test methods for the set of values.
 	 *
 	 * @param leftBit
-	 *            Bit value for left side of binary operator
+	 *                 Bit value for left side of binary operator
 	 * @param rightBit
-	 *            Bit value for right side of binary operator
+	 *                 Bit value for right side of binary operator
 	 * @param expected
-	 *            Expected bit value for the result of AND
+	 *                 Expected bit value for the result of AND
 	 */
-	public BitAndTest(int leftBit, int rightBit, int expected)
-	{
+	public BitAndTest(int leftBit, int rightBit, int expected) {
 		this.leftBit = new Bit(leftBit);
 		this.rightBit = new Bit(rightBit);
 		this.expectedResult = new Bit(expected);
@@ -76,12 +74,12 @@ public class BitAndTest
 	 * With 4 combinations of values for a binary operator, there will be four
 	 * arrays of parameters.
 	 *
-	 * @return A list of integer arrays containing all 0-1 combination pairs for each test run.
+	 * @return A list of integer arrays containing all 0-1 combination pairs for
+	 *         each test run.
 	 */
 	@Parameters
-	public static List<Integer[]> data( )
-	{
-		List<Integer[]> params = new LinkedList<Integer[]>( );
+	public static List<Integer[]> data() {
+		List<Integer[]> params = new LinkedList<Integer[]>();
 		params.add(new Integer[] { 0, 0, 0 });
 		params.add(new Integer[] { 0, 1, 0 });
 		params.add(new Integer[] { 1, 0, 0 });
@@ -95,8 +93,7 @@ public class BitAndTest
 	 * operation to get the actual value, and assert that it is as expected.
 	 */
 	@Test
-	public void testAnd()
-	{
+	public void testAnd() {
 		Bit actualBit = leftBit.and(rightBit);
 		Assert.assertEquals(expectedResult, actualBit);
 	}
