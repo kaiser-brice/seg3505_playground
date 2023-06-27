@@ -22,6 +22,7 @@ public class FizzBuzz {
         if(n % 15 == 0){
             return "FizzBuzz";
         }
+
         return null;
     }
 }

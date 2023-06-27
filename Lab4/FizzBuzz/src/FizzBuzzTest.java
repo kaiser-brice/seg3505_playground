@@ -24,5 +24,9 @@ class FizzBuzzTest {
         Assertions.assertEquals("FizzBuzz", fizzBuzz.process(30));
     }
 
-
+    @Test
+    public void checkNonDivisibilityBy3or5() {
+        Assertions.assertEquals("2", fizzBuzz.process(2));
+        Assertions.assertEquals("7", fizzBuzz.process(7));
+    }
 }
