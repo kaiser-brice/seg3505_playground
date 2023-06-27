@@ -25,4 +25,8 @@ public class FizzBuzz {
 
         return String.valueOf(n);
     }
+
+    public boolean equal(int n, int m){
+        return false;
+    }
 }

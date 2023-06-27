@@ -29,4 +29,13 @@ class FizzBuzzTest {
         Assertions.assertEquals("2", fizzBuzz.process(2));
         Assertions.assertEquals("7", fizzBuzz.process(7));
     }
+
+    @Test
+    public void checkResultEqualityForTwoIntegers() {
+        Assertions.assertEquals(false, fizzBuzz.equal(2,3));
+        Assertions.assertEquals(true, fizzBuzz.equal(2, 2));
+        Assertions.assertEquals(true, fizzBuzz.equal(3, 9));
+        Assertions.assertEquals(false, fizzBuzz.equal(15, 5));
+        Assertions.assertEquals(false, fizzBuzz.equal(3, 5));
+    }
 }
