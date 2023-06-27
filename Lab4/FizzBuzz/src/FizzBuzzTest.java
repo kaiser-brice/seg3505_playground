@@ -12,5 +12,11 @@ class FizzBuzzTest {
         Assertions.assertEquals("Fizz", fizzBuzz.process(12));
     }
 
+    @Test
+    public void checkDivisibilityBy5() {
+        Assertions.assertEquals("Buzz", fizzBuzz.process(125));
+        Assertions.assertEquals("Buzz", fizzBuzz.process(25));
+    }
+
 
 }
