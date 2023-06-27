@@ -23,6 +23,6 @@ public class FizzBuzz {
             return "FizzBuzz";
         }
 
-        return null;
+        return String.valueOf(n);
     }
 }
