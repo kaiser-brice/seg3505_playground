@@ -11,6 +11,9 @@ public class FizzBuzz {
     public FizzBuzz() {
     }
     public String process(int n){
+        if(n % 3 == 0){
+            return "Fizz";
+        }
         return null;
     }
 }
