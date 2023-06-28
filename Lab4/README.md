@@ -14,6 +14,6 @@
 |    Commit group/names    |            Commit number                  | Description |
 |    ------------------    |            -------------                  | ----------- |
 | Divisibility by 3 failed, Divisibility by 3 passed| 3be46caba229c00db4cac80e59542d00e47c8b74, 316745e537482426f30e27baecd962b93bd752e0 | Here we want to test if when the number is divisible by 3 returns "Fizz". The test initially failed and the code was refactored for the test group to pass.     Test: <img src="images/divisibilityby3.png"> Implementation: <img src="images/divisibilyby3implementation.png"> 
-| Divisibility by 5 failed, Divisibility by 5 passed | f75dd9a8963d6318c119c6b3fd4edb63e1deba1d, 3e79e0118b580e39004f6717e9015826075232db| Here we want to test if when the number is divisible by 5 returns "Buzz". The test initially failed and the code was refactored for the test group to pass.     Test: <img src="images/divisibilityby5.png"> Implementation: <img src="images/divisibilyby5implementation.png">
+| Divisibility by 5 failed, Divisibility by 5 passed | f75dd9a8963d6318c119c6b3fd4edb63e1deba1d, 3e79e0118b580e39004f6717e9015826075232db| Here we want to test if when the number is divisible by 5 returns "Buzz". The test initially failed and the code was refactored for the test group to pass.     Test: <img src="images/divisibilityby5.png"> Implementation: <img src="images/divisibilityby5implementation.png">
 
 
