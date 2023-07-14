@@ -3,7 +3,7 @@
 | Course | SEG 3503 |
 | Professor | Mohammed Ibrahim |
 | TA | Joesph Abonasara |
-| Team | Brice Joan Ngnawo Soh - nsoh087@uottawa.ca - 300262882<br>Greg Nathan Ngongang Ouandji - gngon065@uottawa.ca<br>Aaron Muganda - amuga022@uottawa.ca - 300246117 |
+| Team | Brice Joan Ngnawo Soh - nsoh087@uottawa.ca - 300262882<br>Greg Nathan Ngongang Ouandji - gngon065@uottawa.ca - 300260560<br>Aaron Muganda - amuga022@uottawa.ca - 300246117 |
 
 <b>1. Grades</b>
 --------------------
@@ -21,7 +21,7 @@ With the stubbed code, we can see that the web app is able to display our random
 After refactoring the stub code, we can observe that the percentage grade corresponds with the numeric grade and letter grade in both cases.
 
 <b>Refactored Stub Code</b>
-<img src = refactored_stub_code.png/>
+<img src = images/refactored_stub_code.png/>
 
 ----------------------------------
 
@@ -125,15 +125,25 @@ We implemented the four missing test cases.
 
 
 <b>Results of Tests:</b>
+
 <img src = images/completed_tests.png/>
 
+
+
 <b>Analysis:</b>
+
 <img src = images/loadTweet.png/>
+
 We can observe that the loadTweet() method has 3 possible outputs which can either contain  @me, @you, or return null.
 
 <img src = images/isMentionned.png/>
+
 But on the contrary, in isMentionned() method the possibility of getting a null as a tweet is not considered in the implementation, or the possibility of @name being a substring. That is the reason why the isMentionned_handleNull() and isMentionned_dontReturnSubstringMatches() failed. So the updated code above covers both scenarios.
 
+
 <b>Results of Tests after isMentionned() was refactored:</b>
+
 <img src = images/test_passed.png/>
+
+
 After refactoring our code, all the test cases passed successfully. 
