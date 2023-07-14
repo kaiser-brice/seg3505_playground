@@ -28,6 +28,8 @@ After refactoring the stub code, we can observe that the percentage grade corres
 <b>2. Twitter</b>
 -----------------------------------
 <b>Test Cases:</b>
+
+
  @Test
     void isMentionned_lookForAtSymbol() {
         Twitter twitter = partialMockBuilder(Twitter.class)
