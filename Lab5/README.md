@@ -124,7 +124,16 @@ We implemented the four missing test cases.
     }
 
 
-<b>Results of Tests</b>
+<b>Results of Tests:</b>
 <img src = images/completed_tests.png/>
 
-<b>Analysis</b>
+<b>Analysis:</b>
+<img src = images/loadTweet.png/>
+We can observe that the loadTweet() method has 3 possible outputs which can either contain  @me, @you, or return null.
+
+<img src = images/isMentionned.png/>
+But on the contrary, in isMentionned() method the possibility of getting a null as a tweet is not considered in the implementation, or the possibility of @name being a substring. That is the reason why the isMentionned_handleNull() and isMentionned_dontReturnSubstringMatches() failed. So the updated code above covers both scenarios.
+
+<b>Results of Tests after isMentionned() was refactored:</b>
+<img src = images/test_passed.png/>
+After refactoring our code, all the test cases passed successfully. 
