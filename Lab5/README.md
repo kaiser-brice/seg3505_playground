@@ -28,15 +28,8 @@ After refactoring the stub code, we can observe that the percentage grade corres
 <b>2. Twitter</b>
 -----------------------------------
 <b>Test Cases:</b>
-    @Test
-    void mock_partial_object() {
+ 
 
-        Twitter twitter = partialMockBuilder(Twitter.class)
-                .addMockedMethod("loadTweet")
-                .createMock();
-
-        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
-        replay(twitter);
 
         boolean actual;
 
