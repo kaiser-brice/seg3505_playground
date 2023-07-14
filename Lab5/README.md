@@ -3,7 +3,7 @@
 | Course | SEG 3503 |
 | Professor | Mohammed Ibrahim |
 | TA | Joesph Abonasara |
-| Team | Brice Joan Ngnawo Soh - nsoh087@uottawa.ca - 300262882, Greg Nathan Ngongang Ouandji - gngon065@uottawa.ca, Aaron Muganda - amuga022@uottawa.ca - 300246117 |
+| Team | Brice Joan Ngnawo Soh - nsoh087@uottawa.ca - 300262882<br>Greg Nathan Ngongang Ouandji - gngon065@uottawa.ca<br>Aaron Muganda - amuga022@uottawa.ca - 300246117 |
 
 <b>1. Grades</b>
 --------------------
@@ -30,7 +30,7 @@ After refactoring the stub code, we can observe that the percentage grade corres
 <b>Test Cases:</b>
  
 
-
+We implemented the four missing test cases.
     
 
     @Test
@@ -123,3 +123,8 @@ After refactoring the stub code, we can observe that the percentage grade corres
         assertEquals(false, actual);
     }
 
+
+<b>Results of Tests</b>
+<img src = images/completed_tests.png/>
+
+<b>Analysis</b>
