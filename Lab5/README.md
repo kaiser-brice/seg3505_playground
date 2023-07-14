@@ -31,14 +31,7 @@ After refactoring the stub code, we can observe that the percentage grade corres
  
 
 
-        boolean actual;
-
-        actual = twitter.isMentionned("me");
-        assertEquals(true, actual);
-
-        actual = twitter.isMentionned("you");
-        assertEquals(false, actual);
-    }
+    
 
     @Test
     void isMentionned_lookForAtSymbol() {
