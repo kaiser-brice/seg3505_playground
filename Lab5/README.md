@@ -30,11 +30,15 @@ After refactoring the stub code, we can observe that the percentage grade corres
 <b>Test Cases:</b>
 
 
+
+
+
  @Test
     void isMentionned_lookForAtSymbol() {
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
+                
         expect(twitter.loadTweet()).andReturn("hello @me").times(2);
         replay(twitter);
 
