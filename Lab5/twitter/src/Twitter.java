@@ -29,7 +29,7 @@ public class Twitter {
       }
       temp += tweet.charAt(i);
     }
-    return tweet.contains("@" + name);
+    return temp.equals("@" + name);
   }
 
 }
