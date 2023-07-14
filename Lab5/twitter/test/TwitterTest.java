@@ -74,9 +74,6 @@ class TwitterTest {
 
     @Test
     void isMentionned_dontReturnSubstringMatches() {
-        // // Assuming a tweet like "hello @meat"
-        // // isMentionned("me") should be false
-        // // isMentionned("meat") should be true
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
@@ -95,9 +92,6 @@ class TwitterTest {
 
     @Test
     void isMentionned_superStringNotFound() {
-        // // Assuming a tweet like "hello @me"
-        // // isMentionned("me") should be true
-        // // isMentionned("meat") should be false
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
@@ -116,9 +110,6 @@ class TwitterTest {
 
     @Test
     void isMentionned_handleNull() {
-        // // Assuming no tweet is available (i.e. null)
-        // // isMentionned("me") should be false
-        // // isMentionned("meat") should be false
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
