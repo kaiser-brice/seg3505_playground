@@ -21,7 +21,7 @@ With the stubbed code, we can see that the web app is able to display our random
 After refactoring the stub code, we can observe that the percentage grade corresponds with the numeric grade and letter grade in both cases.
 
 <b>Refactored Stub Code</b>
-<img src = />
+<img src = refactored_stub_code.png/>
 
 ----------------------------------
 
