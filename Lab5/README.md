@@ -28,17 +28,31 @@ After refactoring the stub code, we can observe that the percentage grade corres
 <b>2. Twitter</b>
 -----------------------------------
 <b>Test Cases:</b>
+    @Test
+    void mock_partial_object() {
 
+        Twitter twitter = partialMockBuilder(Twitter.class)
+                .addMockedMethod("loadTweet")
+                .createMock();
 
+        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
+        replay(twitter);
 
+        boolean actual;
 
+        actual = twitter.isMentionned("me");
+        assertEquals(true, actual);
 
- @Test
+        actual = twitter.isMentionned("you");
+        assertEquals(false, actual);
+    }
+
+    @Test
     void isMentionned_lookForAtSymbol() {
         Twitter twitter = partialMockBuilder(Twitter.class)
                 .addMockedMethod("loadTweet")
                 .createMock();
-                
+
         expect(twitter.loadTweet()).andReturn("hello @me").times(2);
         replay(twitter);
 
@@ -82,6 +96,24 @@ After refactoring the stub code, we can observe that the percentage grade corres
 
         actual = twitter.isMentionned("me");
         assertEquals(true, actual);
+
+        actual = twitter.isMentionned("meat");
+        assertEquals(false, actual);
+    }
+
+    @Test
+    void isMentionned_handleNull() {
+        Twitter twitter = partialMockBuilder(Twitter.class)
+                .addMockedMethod("loadTweet")
+                .createMock();
+
+        expect(twitter.loadTweet()).andReturn(null).times(2);
+        replay(twitter);
+
+        boolean actual;
+
+        actual = twitter.isMentionned("me");
+        assertEquals(false, actual);
 
         actual = twitter.isMentionned("meat");
         assertEquals(false, actual);
