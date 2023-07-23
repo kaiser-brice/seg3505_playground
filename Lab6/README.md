@@ -9,7 +9,13 @@
 <img src = images/mvn_version.png/>
 <br>
 <h1>Output of mvn compile</h1>
-<img src = images/mvn_compile.png/>
+<img src = images/mvn_compile1.png/>
+<img src = images/mvn_compile2.png/>
 <br>
 <h1>Output of mvn package -DskipTests</h1>
-<img src = images/mvn_DskipTests.png/>
+<img src = images/mvn_DskipTests1.png/>
+<img src = images/mvn_DskipTests2.png/>
+<br>
+<h1>Output of mvn package -DskipTests</h1>
+<img src = images/bin/run.png/>
+<br>
