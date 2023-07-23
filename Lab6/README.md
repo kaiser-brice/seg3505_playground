@@ -19,3 +19,16 @@
 <h1>Output of java -jar ./target/BookstoreApp-0.1.0.jar</h1>
 <img src = images/bin_run.png/>
 <br>
+<h1>Output of java -jar bookstore5.jar</h1>
+<img src = images/bookstore5.png/>
+<br>
+<h1>Output of mvn test</h1>
+<img src = images/mvn_test1.png/>
+<img src = images/mvn_test2.png/>
+<br>
+<h1>Screenshot of one additional test</h1>
+<img src = images/selenium_test.png/>
+<br>
+<h1>Output of mvn test fro new test</h1>
+<img src = images/mvn_output_test.png/>
+
