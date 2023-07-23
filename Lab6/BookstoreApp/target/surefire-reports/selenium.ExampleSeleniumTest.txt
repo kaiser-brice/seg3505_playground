@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: selenium.ExampleSeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 40.802 s <<< FAILURE! - in selenium.ExampleSeleniumTest
+test3  Time elapsed: 17.477 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#searchbtn"}
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Brices-MacBook-Air.local', ip: 'fe80:0:0:0:10d1:ffa6:337:4a2c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/j4/stmqkcq56mq...}, goog:chromeOptions: {debuggerAddress: localhost:58666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e762705133d8c89770e465d9917c16c3
+*** Element info: {Using=id, value=searchbtn}
+	at selenium.ExampleSeleniumTest.test3(ExampleSeleniumTest.java:85)
+
