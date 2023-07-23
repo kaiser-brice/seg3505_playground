@@ -16,6 +16,6 @@
 <img src = images/mvn_DskipTests1.png/>
 <img src = images/mvn_DskipTests2.png/>
 <br>
-<h1>Output of mvn package -DskipTests</h1>
-<img src = images/bin/run.png/>
+<h1>Output of java -jar ./target/BookstoreApp-0.1.0.jar</h1>
+<img src = images/bin_run.png/>
 <br>
